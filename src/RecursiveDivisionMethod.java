@@ -19,13 +19,9 @@ public class RecursiveDivisionMethod {
         System.out.println("constructor");
         // set size
 
-
         setSize();
         fillMaze();
         devideChamber();
-
-
-
         printMaze();
 
     }
@@ -44,13 +40,13 @@ public class RecursiveDivisionMethod {
             int randRow = 3;//= (int)(Math.random()*totalHeight);
 
             System.out.println("vertical");
-            maze.get(3).set(5,"#");
                 //maze.get(3).set(2,"#");
-            for(int i=0; i <6;i++)
+
+            for(int i=0; i <totalWidth;i++)
             {
-
-
+            maze.get(randRow).set(i,"#");
             }
+
         }
         // go Horisontal
         else if(verticalOrHorisontal==1)
@@ -120,7 +116,7 @@ public class RecursiveDivisionMethod {
             list.add("#");
             maze.add(list);
         }
-        maze.get(3).set(5,"#");
+
 
 
         maze.add(border);
