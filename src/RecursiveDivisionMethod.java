@@ -22,7 +22,53 @@ public class RecursiveDivisionMethod {
 
         setSize();
         fillMaze();
+        devideChamber();
+
+
+
         printMaze();
+
+    }
+
+    private void devideChamber()
+    {
+
+
+        //tagudgagnspukt i en grænse
+        //vælg horisontal eller vertical
+
+        int verticalOrHorisontal =0;//= (int)(Math.random()*2);
+        // go vertical
+        if (verticalOrHorisontal==0)
+        {
+            int randRow = 3;//= (int)(Math.random()*totalHeight);
+
+            System.out.println("vertical");
+            maze.get(3).set(5,"#");
+                //maze.get(3).set(2,"#");
+            for(int i=0; i <6;i++)
+            {
+
+
+            }
+        }
+        // go Horisontal
+        else if(verticalOrHorisontal==1)
+        {
+            System.out.println("horisontal");
+
+        }
+        else
+            System.out.println("error");
+                // 0 horisontal ,1 vertical
+        // hvis vertical
+            // lav et random nummer of start der.
+            // ved at sige tag den den række og lav hele rækken om til "#" på nær et tilfældigt sted.
+            // check hvor langt der er til den næste væg.
+            //udfyld hele rækken.
+
+
+        //
 
     }
 
@@ -74,6 +120,8 @@ public class RecursiveDivisionMethod {
             list.add("#");
             maze.add(list);
         }
+        maze.get(3).set(5,"#");
+
 
         maze.add(border);
         //maze.add(border);
