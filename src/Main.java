@@ -6,7 +6,7 @@ public class Main {
         System.out.println("hi");
 
         RecursiveDivisionMethod recursiveDivisionMethod = new RecursiveDivisionMethod();
-
+        //recursiveDivisionMethod.printMaze();
     }
 
 
